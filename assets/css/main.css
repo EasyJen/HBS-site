@@ -83,3 +83,6 @@ a:focus-visible,button:focus-visible{outline-color:var(--coral)}
 
 /* Keep the company mark centered beside the type and strengthen CTA borders. */
 .hero-brand-name{align-items:center}.hero-brand-name>span{display:block;line-height:1.2}.hero-brand-name>.hero-logomark{display:block;align-self:center;transform:translateY(-.08em)}.button.primary,.site-header nav .nav-cta{border-width:2px}
+
+/* Persistent navigation and an edge-to-edge priorities band. */
+.site-header{position:sticky;top:0;z-index:100;background:#fff}html{scroll-padding-top:120px}.proof-strip{max-width:none;width:100%;margin:0;padding-inline:max(28px,calc((100% - var(--max))/2));background:#1c398e}@media(max-width:850px){html{scroll-padding-top:106px}.proof-strip{margin:0;padding-inline:24px}.site-header nav{max-height:calc(100dvh - 90px);overflow-y:auto}}

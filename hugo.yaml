@@ -1,0 +1,6 @@
+baseURL: "http://localhost:1314/"
+languageCode: "en-us"
+title: "Healthtech Benefits Solutions | Corporate"
+disableKinds: ["taxonomy", "term"]
+params:
+  description: "Healthtech Benefits Solutions connects technology, service, and benefit delivery for health plans and partners. Explore our approach and EasyOTC solution."

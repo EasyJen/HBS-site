@@ -1,0 +1,79 @@
+{{ define "main" }}
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Healthtech Benefits Solutions home"><img src="{{ "images/hbs-logo.png" | relURL }}" alt="HBS — Healthtech Benefits Solutions" width="271" height="127"></a>
+  <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Primary navigation"><a href="#difference">Our company</a><a href="#platform">Capabilities</a><a href="#easyotc">EasyOTC</a><a href="#outcomes">Our approach</a><a href="#contact" class="nav-cta">Talk with us <span>↗</span></a></nav>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><i></i> Healthtech Benefits Solutions</p>
+      <h1>Better benefit access.<br><em>Stronger plan performance.</em></h1>
+      <p class="lede">Improving benefit access and value to strengthen plan performance. We make supplemental health benefits easier to understand, access, and use.</p>
+      <div class="actions"><a class="button primary" href="mailto:james@easyotc.com">Explore a partnership <span>→</span></a><a class="button ghost" href="#platform">Explore our capabilities <span>↓</span></a></div>
+    </div>
+    <figure class="hero-ecosystem floating-system reveal" aria-label="Health plan benefits connected to a care representative and an open box of OTC products delivered to the member">
+      <div class="ecosystem-space">
+        <svg class="ecosystem-tethers" viewBox="0 0 560 570" fill="none" aria-hidden="true">
+          <defs><filter id="signal-glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="4"/></filter></defs>
+          <path class="tether" d="M385 120 C405 28 265 34 285 132 C305 218 172 190 145 285 C85 390 125 495 228 469 C288 454 300 399 375 410"/>
+          <circle class="travel-glow" r="8" fill="#fff5da"/>
+          <circle class="travel-light" r="3.2" fill="#ffffff"/>
+        </svg>
+        <div class="ecosystem-node node-plan" role="img" aria-label="Health plan benefit card on a cyan circle"><div class="node-disc"></div><svg class="node-art art-plan" viewBox="0 230 512 560" aria-hidden="true"><defs><clipPath id="crop-plan"><rect x="0" y="230" width="512" height="560"/></clipPath></defs><image clip-path="url(#crop-plan)" href="{{ "images/hbs-floating-objects.png" | relURL }}" width="1536" height="1024"/></svg></div>
+        <div class="ecosystem-node node-rep" role="img" aria-label="Friendly care representative wearing a headset on a blue circle"><div class="node-disc"></div><svg class="node-art art-rep" viewBox="522 130 465 710" aria-hidden="true"><defs><clipPath id="rep-only"><path d="M522 130H987V500L954 548 975 620 987 770V840H522Z"/></clipPath></defs><image clip-path="url(#rep-only)" href="{{ "images/hbs-floating-objects.png" | relURL }}" width="1536" height="1024"/></svg></div>
+        <div class="ecosystem-node node-delivery" role="img" aria-label="Open box with unlabeled OTC bottles, product cartons and playful packing paper on a gold circle"><div class="node-disc"></div><svg class="node-art art-delivery" viewBox="0 0 1024 1024" aria-hidden="true"><defs><filter id="packing-drift" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="1" seed="4" result="texture"/><feDisplacementMap in="SourceGraphic" in2="texture" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter><clipPath id="packing-top"><rect width="1024" height="560"/></clipPath><clipPath id="box-bottom"><rect y="560" width="1024" height="464"/></clipPath></defs><image href="{{ "images/hbs-open-box.png" | relURL }}" width="1024" height="1024" clip-path="url(#box-bottom)"/><g clip-path="url(#packing-top)"><image class="packing-paper" href="{{ "images/hbs-open-box.png" | relURL }}" width="1024" height="1024" filter="url(#packing-drift)"/></g></svg></div>
+      </div>
+    </figure>
+    <div class="curve" aria-hidden="true"></div>
+  </section>
+
+  <section class="proof-strip" aria-label="Our priorities">
+    <div><strong>01</strong><span><b>Activate earlier</b>Support use from day one</span></div>
+    <div><strong>02</strong><span><b>Reduce friction</b>Guide members with confidence</span></div>
+    <div><strong>03</strong><span><b>Learn faster</b>Turn behavior into insight</span></div>
+  </section>
+
+  <section class="intro section" id="difference">
+    <div class="intro-copy reveal"><p class="eyebrow company-label"><i></i> Our company</p><h2>Benefits that connect plans with the people they serve.</h2><p>We design supplemental benefit experiences around how members actually navigate their benefits. Then we bring together the technology, operations, fulfillment, and human support needed to make those experiences work at scale.</p></div>
+    <div class="quote-card reveal"><span class="principle-label">Our guiding principle</span><p>The value of a benefit is only real when a member can understand it, access it, and use it with confidence.</p></div>
+  </section>
+
+  <section class="platform section" id="platform">
+    <div class="platform-head reveal"><p class="eyebrow light"><i></i> Our capabilities</p><h2>Connected experience.<br><em>From access to delivery.</em></h2><p>An integrated operational and technology platform connects member engagement, real-time benefit adjudication, warehouse automation, and fulfillment.</p></div>
+    <div class="journey reveal">
+      <article><span class="num">01</span><div class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 11-12"/></svg></div><h3>Activate</h3><p>Introduce the benefit early and create an immediate reason to engage.</p><small>Member activation</small></article>
+      <article><span class="num">02</span><div class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 26v-4a15 15 0 0 1 30 0v4M9 24H6v11h7V24H9Zm30 0h3v11h-7V24h4Zm0 11v2a5 5 0 0 1-5 5h-7"/></svg></div><h3>Guide</h3><p>Design assisted experiences around clear information, member consent, and accountable service.</p><small>Human help, built in</small></article>
+      <article><span class="num">03</span><div class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="11" width="32" height="29" rx="5"/><path d="M8 21h32M19 11v10h10V11M28 32h5"/></svg></div><h3>Deliver</h3><p>Connect the digital experience to thoughtful fulfillment and plan-branded communication.</p><small>A tangible brand moment</small></article>
+    </div>
+  </section>
+
+  <section class="experience section" id="easyotc">
+    <figure class="rendered-monitor reveal"><img src="{{ "images/easyotc-3d-monitor-gray.png" | relURL }}" alt="EasyOTC shopping website on a rounded light gray plastic 3D monitor angled toward the right" width="1536" height="1024" loading="lazy"></figure>
+    <div class="experience-copy reveal"><p class="eyebrow"><i></i> A solution in practice · EasyOTC</p><h2>EasyOTC.<br><em>Our approach in action.</em></h2><p class="product-description">Our EasyOTC solution helps Medicare Advantage members get more value from their OTC benefits through guided purchasing, competitive product pricing, convenient home delivery, and ongoing support.</p><ul><li><b>Guided purchasing</b><span>Help finding everyday essentials at competitive product prices.</span></li><li><b>Convenient home delivery</b><span>Fulfillment that brings OTC products directly to members.</span></li><li><b>Ongoing engagement</b><span>Human support that makes benefits easier to use throughout the plan year.</span></li></ul></div>
+  </section>
+
+  <section class="outcomes section" id="outcomes">
+    <div class="outcomes-copy reveal"><p class="eyebrow"><i></i> Our approach</p><h2>Member ease.<br><em>Carrier intelligence.</em></h2><p>Better benefit experiences start with understanding the people using them. That understanding shapes our technology, processes, and support—reducing friction for members while strengthening activation, utilization, engagement, and overall plan performance.</p><a class="button primary outcomes-cta" href="mailto:james@easyotc.com">Discuss your partnership goals <span>→</span></a></div>
+    <div class="outcome-grid">
+      <article class="reveal"><span class="outcome-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 37V12M9 37h30M16 29l8-9 7 5 9-14M32 11h8v8"/></svg></span><h3>Drive utilization</h3><p>Make the benefit visible, relevant, and easier to use.</p></article>
+      <article class="reveal"><span class="outcome-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="17"/><path d="m16 24 6 6 11-12"/></svg></span><h3>Reinforce value</h3><p>Create useful moments that members can see and feel.</p></article>
+      <article class="reveal"><span class="outcome-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 40V9h26l-5 9 5 9H11"/></svg></span><h3>Extend your brand</h3><p>Carry plan messaging through the doorstep experience.</p></article>
+      <article class="reveal"><span class="outcome-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 38V26M24 38V10M38 38V19"/><circle cx="10" cy="20" r="2"/><circle cx="24" cy="5" r="2"/><circle cx="38" cy="13" r="2"/></svg></span><h3>Surface insight</h3><p>See aggregated search and ordering patterns more clearly.</p></article>
+    </div>
+  </section>
+
+  <section class="control section">
+    <div class="control-head reveal"><p class="eyebrow"><i></i> Operational confidence</p><h2>Simpler experiences.<br>Connected operations.</h2></div>
+    <div class="control-points"><article><b>01</b><h3>Real-time adjudication</h3><p>Connect member engagement with real-time benefit adjudication within an integrated platform.</p></article><article><b>02</b><h3>Connected fulfillment</h3><p>Bring warehouse automation and fulfillment together to support benefit experiences at scale.</p></article><article><b>03</b><h3>API-first integration</h3><p>Designed for rapid integration with health plan partners and flexibility across card administrator requirements.</p></article></div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <p class="eyebrow light reveal"><i></i> Start a conversation</p><div class="contact-grid"><h2 class="reveal">Elevate your<br><em>benefit experience.</em></h2><div class="contact-copy reveal"><p>For carriers, strategic partners, and organizations working to make benefits more useful: let’s explore your member goals, service needs, and opportunities to work together.</p><a class="button coral" href="mailto:james@easyotc.com">Explore a partnership <span>→</span></a></div></div>
+  </section>
+</main>
+
+<footer><a class="brand inverse" href="#top"><img src="{{ "images/hbs-logo.png" | relURL }}" alt="HBS — Healthtech Benefits Solutions" width="271" height="127"></a><p>Technology. Service. Better benefit experiences.</p><small>© {{ now.Year }} Healthtech Benefits Solutions, LLC</small></footer>
+{{ end }}
+

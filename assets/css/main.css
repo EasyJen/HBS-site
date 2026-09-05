@@ -86,3 +86,9 @@ a:focus-visible,button:focus-visible{outline-color:var(--coral)}
 
 /* Persistent navigation and an edge-to-edge priorities band. */
 .site-header{position:sticky;top:0;z-index:100;background:#fff}html{scroll-padding-top:120px}.proof-strip{max-width:none;width:100%;margin:0;padding-inline:max(28px,calc((100% - var(--max))/2));background:#1c398e}@media(max-width:850px){html{scroll-padding-top:106px}.proof-strip{margin:0;padding-inline:24px}.site-header nav{max-height:calc(100dvh - 90px);overflow-y:auto}}
+
+/* Compact the stacked contact section on mobile. */
+@media(max-width:850px){.contact-grid{row-gap:28px}.contact-copy>p:first-child{margin-top:0}}
+
+/* Give the primary navigation more breathing room. */
+.site-header nav{gap:30px}@media(min-width:851px) and (max-width:1100px){.site-header nav{gap:22px}}@media(max-width:850px){.site-header nav{gap:24px}}
